@@ -3,7 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mehta</title>
+
+<title>Trade With Munaaf</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
 <!-- Meta Pixel Code -->
 <script>
@@ -15,117 +18,208 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '26886841440971897');
+fbq('init', '26725137887164472');
 fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=26886841440971897&ev=PageView&noscript=1"
+src="https://www.facebook.com/tr?id=26725137887164472&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
 
 <style>
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    color: white;
-    text-align: center;
 
-    background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #000000);
-    background-size: 400% 400%;
-    animation: bg 8s ease infinite;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
 }
 
-@keyframes bg {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
+body{
+    background:#07141f;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:14px;
+    overflow-x:hidden;
 }
 
-.container {
-    margin: 30px auto;
-    width: 90%;
-    max-width: 400px;
-    padding: 20px;
-    border-radius: 20px;
-    backdrop-filter: blur(10px);
-    background: rgba(255,255,255,0.05);
-    box-shadow: 0 0 25px rgba(0,255,255,0.2);
+/* MAIN CARD */
+
+.container{
+    width:100%;
+    max-width:390px;
+    background:#0d1b28;
+    border-radius:26px;
+    padding:28px 20px;
+    text-align:center;
+    border:1px solid rgba(255,255,255,0.05);
+    box-shadow:0 0 30px rgba(0,255,255,0.08);
 }
 
-.profile {
-    width: 110px;
-    height: 110px;
-    border-radius: 50%;
-    border: 3px solid cyan;
-    box-shadow: 0 0 20px cyan;
+/* PROFILE */
+
+.profile{
+    width:95px;
+    height:95px;
+    margin:auto;
+    position:relative;
 }
 
-.heading {
-    font-size: 24px;
-    margin-top: 10px;
-    font-weight: bold;
-    color: #00eaff;
-    text-shadow: 0 0 10px #00eaff;
+.profile img{
+    width:100%;
+    height:100%;
+    border-radius:50%;
+    object-fit:cover;
+    border:3px solid #42e8ff;
 }
 
-.box {
-    margin: 10px 0;
-    padding: 10px;
-    border-radius: 10px;
-    background: rgba(0,0,0,0.4);
-    border-left: 3px solid cyan;
+.online{
+    width:18px;
+    height:18px;
+    background:#3cff65;
+    border-radius:50%;
+    position:absolute;
+    right:4px;
+    bottom:8px;
+    border:2px solid #0d1b28;
 }
 
-/* 🚀 Button */
-.btn {
-    margin-top: 20px;
-    padding: 14px;
-    width: 100%;
-    border-radius: 30px;
-    border: none;
-    background: linear-gradient(45deg, #00c6ff, #0072ff);
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
+/* TITLE */
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-
-    text-decoration: none; /* ❌ underline हटाया */
-    animation: pulse 1.5s infinite;
+h1{
+    color:#fff;
+    font-size:28px;
+    margin-top:18px;
+    font-weight:700;
+    line-height:1.3;
 }
 
-@keyframes pulse {
-    0% { box-shadow: 0 0 5px #00c6ff; }
-    50% { box-shadow: 0 0 20px #00c6ff; }
-    100% { box-shadow: 0 0 5px #00c6ff; }
+h1 span{
+    color:#5ce7ff;
 }
 
-.icon {
-    width: 20px;
-    height: 20px;
-    fill: white;
+/* VERIFY */
+
+.verify{
+    color:#4fe5ff;
+    margin-top:10px;
+    font-size:15px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:7px;
+    font-weight:500;
 }
 
-.footer {
-    margin-top: 20px;
-    font-size: 13px;
+.verify .tick{
+    width:18px;
+    height:18px;
+    border-radius:50%;
+    background:#4fe5ff;
+    color:#07141f;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:11px;
+    font-weight:bold;
 }
 
-.footer a {
-    color: #00eaff;
-    text-decoration: none;
+/* DESCRIPTION */
+
+.desc{
+    color:#d6e0e7;
+    font-size:14px;
+    line-height:1.7;
+    margin-top:18px;
+    padding:0 4px;
 }
 
-.disclaimer {
-    font-size: 10px;
-    color: #888;
-    margin-top: 5px;
+/* BUTTON */
+
+.telegram-btn{
+    margin-top:24px;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    text-decoration:none;
+    background:linear-gradient(90deg,#48dfff,#76f4ff);
+    color:#07141f;
+    padding:15px;
+    border-radius:16px;
+    font-size:18px;
+    font-weight:700;
+    transition:0.3s;
 }
+
+.telegram-btn:hover{
+    transform:scale(1.02);
+}
+
+.telegram-btn img{
+    width:24px;
+}
+
+/* FEATURES */
+
+.features{
+    margin-top:22px;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:14px;
+}
+
+.box{
+    background:#111f2d;
+    border-radius:18px;
+    padding:18px 10px;
+    border:1px solid rgba(255,255,255,0.04);
+}
+
+.icon{
+    font-size:28px;
+    margin-bottom:8px;
+}
+
+.box h3{
+    color:#fff;
+    font-size:17px;
+    margin-bottom:3px;
+}
+
+.box p{
+    color:#b9c5cf;
+    font-size:12px;
+}
+
+/* MOBILE PERFECT */
+
+@media(max-width:480px){
+
+    .container{
+        max-width:100%;
+        border-radius:22px;
+        padding:24px 16px;
+    }
+
+    h1{
+        font-size:24px;
+    }
+
+    .telegram-btn{
+        font-size:16px;
+        padding:14px;
+    }
+
+    .box h3{
+        font-size:15px;
+    }
+
+}
+
 </style>
 </head>
 
@@ -133,51 +227,81 @@ body {
 
 <div class="container">
 
-<img src="p.jpg" class="profile">
+    <!-- PHOTO -->
+    <!-- image.jpg की जगह अपना JPG फोटो डालना -->
 
-<div class="heading">👑Mehta is Back👑</div>
+    <div class="profile">
+        <img src="p.jpg" alt="">
+        <div class="online"></div>
+    </div>
 
-<div class="box">✔ Daily 2-3 free calls</div>
-<div class="box">✔ High Accuracy Tips</div>
-<div class="box">✔ Trusted by 12,000+ Traders</div>
-<div class="box">✔ Start Earning with Expert Calls</div>
+    <!-- TITLE -->
 
-<a href="https://t.me/+9k-bjM07wK4yN2U9" target="_blank" style="text-decoration:none;">
-<button class="btn">
+    <h1>Trade With Munaaf <span>OFFICIAL™</span></h1>
 
-<!-- LEFT ICON -->
-<svg class="icon" viewBox="0 0 24 24">
-<path d="M9.993 15.674l-.396 5.57c.567 0 .813-.243 1.108-.534l2.657-2.536 5.506 4.03c1.01.558 1.73.265 2.002-.934l3.63-17.04c.34-1.574-.57-2.19-1.55-1.82L1.43 9.25c-1.5.586-1.48 1.42-.26 1.8l5.62 1.755 13.04-8.23c.614-.39 1.17-.174.71.216"/>
-</svg>
+    <!-- VERIFIED -->
 
-Join Telegram Channel
+    <div class="verify">
+        <div class="tick">✓</div>
+        Verified Expert Account
+    </div>
 
-<!-- RIGHT ICON -->
-<svg class="icon" viewBox="0 0 24 24">
-<path d="M9.993 15.674l-.396 5.57c.567 0 .813-.243 1.108-.534l2.657-2.536 5.506 4.03c1.01.558 1.73.265 2.002-.934l3.63-17.04c.34-1.574-.57-2.19-1.55-1.82L1.43 9.25c-1.5.586-1.48 1.42-.26 1.8l5.62 1.755 13.04-8.23c.614-.39 1.17-.174.71.216"/>
-</svg>
+    <!-- DESCRIPTION -->
 
-</button>
-</a>
+    <div class="desc">
+        Welcome to the elite community. Get access to premium daily updates,
+        exclusive strategies and 24/7 support from our experts.
+    </div>
 
+    <!-- TELEGRAM BUTTON -->
+
+    <!-- यहाँ अपना Telegram लिंक डालना -->
+
+    <a href="https://t.me/+TEw1aJjOpC40NGFl" target="_blank" class="telegram-btn">
+
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png">
+
+        Join Telegram Channel
+
+    </a>
+
+    <!-- FEATURES -->
+
+    <div class="features">
+<div class="box">
+            <div class="icon">🛡️</div>
+            <h3>Secure</h3>
+            <p>Safe Platform</p>
+        </div>
+
+        <div class="box">
+            <div class="icon">⭐</div>
+            <h3>Premium</h3>
+            <p>Daily Updates</p>
+        </div>
+
+        <div class="box">
+            <div class="icon">👥</div>
+            <h3>100k+</h3>
+            <p>Active Members</p>
+        </div>
+
+        <div class="box">
+            <div class="icon">⚡</div>
+            <h3>Live</h3>
+            <p>Real-time Info</p>
+        </div>
+
+    </div>
+<div style="text-align:center; margin-top:18px; font-size:16px; color:#ffffff;">
+    As managed by
+    <a href="https://t.me/+LiETHEERYtgzNjU1"
+       target="_blank"
+       style="color:#FFEB3B; text-decoration:none; font-weight:bold;">
+        APEagency
+    </a>
 </div>
-
-<div class="disclaimer">
-Disclaimer: This channel is strictly for educational and informational purposes only.
-  No investment advice, tips, or guaranteed returns are provided.
-  Financial markets involve risk. Please consult a registered financial advisor before making decisions.
 </div>
-    <br>
-    <div class="footer">
-This ads manged by 
-<a href="https://telegram.me/+glAYUyGU735iNmQ1" target="_blank">APEagency</a>
-</div>
-
-<script>
-setTimeout(() => {
-    window.location.href = "https://t.me/+9k-bjM07wK4yN2U9";
-}, 30000); // 30 sec hidden redirect
-</script>
 
 </body>
 </html>
